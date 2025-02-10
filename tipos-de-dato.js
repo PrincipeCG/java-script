@@ -32,3 +32,7 @@ console.log("hola mundo");
     console.log(typeof null);
     console.log(typeof undefined);
     console.log(typeof false);
+
+/* Si ponemos typeof de null dira que es objeto, pero en realidad es ausencia intencional de valor. 
+    Esto es debido a un error en JavaScript que no se ha corregido por compatibilidad con versiones anteriores. 
+    Comentarios en bloque o multilinea*/ 
