@@ -51,7 +51,7 @@ let ciudad = "Ciudad de Mexico";
 
 console.log( "Ella se llama " + nombre + " tiene " + edad + " años y vive en " + ciudad);
 
-console.log (`Ella se llama ${nombre} tiene ${edad} años y vive en ${ciudad}`) 
+console.log (`Ella se llama ${nombre} tiene ${edad} años y vive en ${ciudad}`)
 // Ctrl + Alt + } 
 // Actualizacion de ES6 (2015)
 
