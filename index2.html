@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="titulo">Hola mundo</h1>
+    <!--seleccion de Dom mediante ID-->
+    <button onclick="cambiarTexto()">cambiar texto</button>
+
+    <!--selecion de Dom mediante Class-->
+    <p class="texto">Este es el primer parrafo</p>
+    <p class="texto">Este es el segundo parrafo</p>
+    <p class="texto">Este es el tercer parrafo</p>
+
+    <button onclick="cambiarColor()">Cambiar color</button>
+
+    <!-- Seleccion por etiqueta-->
+    <p>Hola soy un parrafo</p>
+    <p>Yo tambien soy un parrafo</p>
+
+    <button onclick="ocultarParrafo()">Ocultar parrafo</button>
+
+    <!-- Seleccion por querySelector-->
+    
+    <div>
+        <p>mi perro es mike</p>
+    </div>
+    <p> maic es gordo</p>
+    <button onclick="cambiarTextoDiv()"> Cambiar texto dentro de Div</button>
+
+    <!-- Seleccion por querySelectorAll-->
+     <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+     </ul>
+     <button onclick="marcarItems()"></button>
+
+     <form id="miFormulario">
+        <input type="text" id="nombre" placeholder="ingresa tu nombre">
+        <button type="sumbit">Agregar</button>
+     </form>
+     <p id="mensaje"></p>
+
+    <script src="script2.js"></script>
+</body>
+</html>
