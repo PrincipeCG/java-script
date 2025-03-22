@@ -1,0 +1,194 @@
+/* Estilos generales */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1e3a8a; /* Fondo azul */
+    color: white;
+}
+
+/* Estilos del encabezado */
+header {
+    background-color: #0f172a; /* Azul oscuro */
+    padding: 1.5rem;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem; /* Más grande y llamativo */
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Estilos del menú */
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    background-color: #2563eb; /* Azul vibrante */
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px; /* Más redondeado */
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #1e40af; /* Azul más oscuro */
+}
+
+/* Estilos de la sección */
+main {
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background-color: #334155; /* Azul grisáceo */
+    border-radius: 10px;
+}
+
+/* Estilos de los productos */
+.producto {
+    border: 2px solid #ddd;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: #475569; /* Azul grisáceo oscuro */
+    border-radius: 10px;
+}
+
+/* Botón de agregar al carrito */
+.agregar-carrito {
+    background-color: #facc15; /* Amarillo dorado */
+    color: black;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.agregar-carrito:hover {
+    background-color: #eab308; /* Amarillo más intenso */
+}
+
+/* Carrito de compras */
+#carrito {
+    border: 2px solid #ddd;
+    padding: 1rem;
+    margin-top: 1rem;
+    background-color: #475569;
+    border-radius: 10px;
+}
+
+#total-carrito {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #facc15; /* Amarillo dorado */
+}
+
+/* Mensaje de "Sus pasteles" con destellos */
+#mensaje-enviado {
+    background-color: #22c55e; /* Verde vibrante */
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden; /* Para asegurarse de que los destellos no se salgan del contenedor */
+}
+
+#mensaje-enviado::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.4);
+    animation: destellos 1.5s infinite linear;
+    opacity: 0;
+}
+
+/* Animación de destellos */
+@keyframes destellos {
+    0% {
+        opacity: 0;
+        transform: scale(1);
+    }
+    20% {
+        opacity: 0.3;
+        transform: scale(1.1);
+    }
+    40% {
+        opacity: 0.6;
+        transform: scale(1.2);
+    }
+    60% {
+        opacity: 0.3;
+        transform: scale(1.1);
+    }
+    80% {
+        opacity: 0.1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1);
+    }
+}
+
+/* Formulario de contacto más pequeño y estético */
+#formulario-contacto {
+    max-width: 400px;
+    margin: auto;
+    padding: 1.5rem;
+    background-color: #1e293b; /* Azul grisáceo oscuro */
+    border-radius: 10px;
+}
+
+#formulario-contacto label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+#formulario-contacto input,
+#formulario-contacto textarea {
+    width: 100%;
+    padding: 0.7rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+
+#formulario-contacto button {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 20px;
+    transition: background 0.3s ease;
+}
+
+#formulario-contacto button:hover {
+    background-color: #1e40af;
+}
